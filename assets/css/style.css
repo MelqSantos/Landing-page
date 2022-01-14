@@ -2,6 +2,7 @@
 * {
     margin: 0 !important;
     padding: 0 !important;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -12,8 +13,12 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
+
+/* ------------------ Menu Lateral ------------------ */
+
 #nav-lateral {
     height: 100vh;
+    border: none !important;
 }
 
 .usuario {
@@ -22,13 +27,16 @@ body {
     background-position: center;
     background-size: cover;
     color: #fff;
+    border-bottom: solid 1px rgba(255, 255, 255, .5);
+    border-right: solid 1px rgba(255, 255, 255, .5);
 }
 
 #usuLogo {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     background: url(/assets/img/usu.jpeg);
     border-radius: 50%;
+    filter: drop-shadow(2px 2px 2px #000);
     background-size: cover;
     background-position: top;
 }
@@ -56,10 +64,53 @@ nav ul li {
 }
 
 nav ul li:hover {
-    border-right: 5px solid rgb(30, 130, 177);
+    background-color: rgba(255, 255, 255, .05);
 }
 
 nav ul li a {
     color: #c5c5c5;
-    margin-left: 25% !important;
+    margin-left: 20% !important;
+}
+
+
+/* ------------------ Banner ------------------ */
+
+#music {
+    width: 100%;
+    height: 35vh;
+    background: url(/assets/img/banner-music.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: .7;
+}
+
+
+/* Cards */
+
+.card img {
+    opacity: .8;
+}
+
+.card {
+    border: none !important;
+    filter: drop-shadow(2px 2px 2px #000);
+}
+
+#texto-card h5,
+#texto-card p {
+    background: rgba(255, 255, 255, .05);
+}
+
+
+/* Musicas */
+
+.musica img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#play-music {
+    cursor: pointer;
+    font-size: 2rem;
 }
